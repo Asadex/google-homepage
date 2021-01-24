@@ -77,11 +77,12 @@ main
 {
     width:100%;
     position: relative;
+    right:1rem;
     top: 9rem;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
+    margin: auto;
 }
 
 #search
