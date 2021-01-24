@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+*:focus{
+    outline: none;
+}
 
 body
 {
@@ -14,7 +17,7 @@ nav
 {
     display: flex;
     justify-content: flex-end;
-    padding: 5px 19px;
+    padding: 6px 25px;
 }
 
 
@@ -41,7 +44,7 @@ li a:hover
 #apps
 {
     opacity: 0.55;
-    width: 16.5px;
+    width: 16px;
     position: relative;
     top: 2px;
     margin-left: 4px;
@@ -53,9 +56,125 @@ li a:hover
 
 #profile
 {
-    width: 38px;
+    width: 35px;
     border-radius: 50%;
     position: relative;
     top: 2px;
     margin-left: 5px;;
+}
+
+
+/*Main*/
+
+main
+{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#main
+{
+    width:100%;
+    position: relative;
+    top: 9rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#search
+{
+    width:100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#search-input
+{
+    width:55%;
+    padding: 0.8rem 3.1rem;
+    border: 0.8px solid rgba(0,0,0,0.12);
+    -webkit-appearance: none;
+    outline: none;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    font-size: 15px;
+    color: rgba(0,0,0,0.75);
+}
+
+#search-icons
+{
+    width:51.5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media only screen and (max-width: 800px)
+{
+    #search-input{
+        width:90%;
+    }
+    #search-icons
+    {
+        width: 80%
+    }
+}
+
+#search-icon
+{
+    width: 22px;
+    opacity: 0.3;
+    position: relative;
+    bottom: 67px;
+}
+
+#mic-icon
+{
+    width:16px;
+    position: relative;
+    bottom: 65px;
+}
+
+#languages
+{
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.85);
+    margin: 1.7rem;
+}
+
+#languages a
+{
+    margin: 3px;
+    text-decoration: none;
+}
+
+#languages a:hover
+{
+    text-decoration: underline;
+}
+
+button{
+    border: none;
+    font-size: 14px;
+    padding: 9px 16px;
+    border: 1px solid  rgba(0,0,0,0.025);
+    background-color: rgba(0,0,0,0.025);
+    color:rgba(0,0,0,0.75);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+    margin-top: -10px;
+    -webkit-appearance: none;
+}
+
+button:hover
+{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    -webkit-appearance: none;
+}
+
+button:focus{
+    border: 1px solid rgb(0, 153, 255);
 }
