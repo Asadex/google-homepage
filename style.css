@@ -119,6 +119,22 @@ main
     justify-content: space-between;
     
 }
+
+@media only screen and (min-width: 1200px)
+{
+    #search
+    {
+        width:65%
+    }
+    #search-input{
+        width:50%;
+    }
+    #search-icons
+    {
+        width: 30%
+    }
+}
+
 @media only screen and (max-width: 800px)
 {
     #search-input{
